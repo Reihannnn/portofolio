@@ -10,7 +10,13 @@ portfolio/
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+│   ├── script.js
+│   └── i18n.js
+├── projects/
+│   ├── ir-compass/
+│   ├── manatok/
+│   ├── gym-management/
+│   └── gym-landing/
 ├── assets/
 │   ├── images/
 │   └── icons/
@@ -24,7 +30,9 @@ portfolio/
 - Hero with grid pattern, blue gradient, and decorative code card
 - Overview + 4 highlight cards
 - 4 project cards (badges, hover animation, shadow)
-- Experience timeline, Technical Skills grid, Education card
+- Experience timeline, Technical Skills logos, Education card
+- 4 project detail pages (`projects/*/`) with galleries + lightbox zoom
+- ID/EN language toggle in navbar (persisted in `localStorage`, `js/i18n.js`)
 - Contact CTA + footer
 - Fade/slide reveal via IntersectionObserver, respects `prefers-reduced-motion`
 - Responsive: 2 columns → 1 column on mobile, no horizontal overflow
