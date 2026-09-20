@@ -95,6 +95,7 @@
       "contact.title": "Let's Build Something Together",
       "contact.desc":
         "I am open to software development opportunities, freelance projects, and collaboration. Reach me through the channels below.",
+      "contact.email": "Email Me",
 
       "ir.lead":
         "An audit system for the Industrial Relations division to review compliance between company regulations and government rules.",
@@ -344,6 +345,7 @@
       "contact.title": "Mari Bangun Sesuatu Bersama",
       "contact.desc":
         "Saya terbuka untuk peluang software development, freelance projects, dan kolaborasi. Hubungi saya melalui kanal di bawah ini.",
+      "contact.email": "Email Saya",
 
       "ir.lead":
         "Sistem audit untuk divisi Industrial Relations guna meninjau kepatuhan antara aturan perusahaan dan pemerintah.",

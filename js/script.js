@@ -55,6 +55,27 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // One Gmail compose template shared by every .js-email-hire link.
+  // ponytail: single template here, not a copy-pasted URL in every HTML file.
+  const hireSubject = 'Job Opportunity for Reihan Achmad Susilo - [Company Name]';
+  const hireBody = [
+    'Hi Reihan,',
+    'I came across your portfolio and I was impressed with your experience in web development and business process digitalization.',
+    'At [Company Name], we are currently hiring for a [Role / Position] and I believe your background could be a great fit for our team.',
+    'Would you be open to a short call to discuss this opportunity further? Please let me know a time that works best for you.',
+    'Looking forward to connecting with you.',
+    'Best regards,\n[Your Name]\n[Your Position] - [Company Name]\n[Phone / LinkedIn]',
+  ].join('\n\n');
+  const hireUrl =
+    'https://mail.google.com/mail/?view=cm&fs=1&to=reihanahmadsusilo@gmail.com' +
+    '&su=' + encodeURIComponent(hireSubject) +
+    '&body=' + encodeURIComponent(hireBody);
+  document.querySelectorAll('a.js-email-hire').forEach((a) => {
+    a.href = hireUrl;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
   // Lightbox for gallery images (project detail pages only)
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
